@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy · TikTok Manager</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <strong>TikTok Manager</strong>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="terms.html">Terms of Service</a>
+    </nav>
+  </header>
+  <main>
+    <h1>Privacy Policy</h1>
+    <p>This policy describes how TikTok Manager, operated by [COMPLETE THIS: legal name of the person or organization operating this private service], handles information on the operator’s own Windows computer. It is not a public hosted service.</p>
+    <h2>TikTok authorization</h2>
+    <p>TikTok accounts are connected through TikTok Login Kit. The service does not ask for a TikTok password. TikTok returns an authorization code, which is exchanged for an access token and a refresh token. Those tokens are stored encrypted in a local SQLite database and are kept separate for each account. They are not shown in the control panel and they are not sent to Discord.</p>
+    <h2>Profile information and statistics</h2>
+    <p>With the permissions the operator grants, the service may request basic profile information, follower and video counts, and video statistics such as views, likes, comments, and shares. Statistics are requested only when the operator asks for them. TikTok may omit fields. Missing fields are shown as unavailable rather than replaced with invented numbers. A previous result may be stored locally so the operator can compare it with a later request.</p>
+    <h2>Videos</h2>
+    <p>Video files stay in the folders the operator chooses. The service records the file name, size, duration when it can be read, checksum, caption, target account, and publish status. Original files are not deleted automatically. A video is uploaded to TikTok only after the operator confirms that post.</p>
+    <h2>Discord</h2>
+    <p>The service stores the Discord user identifiers that the operator allows to run commands, plus the command context needed to show a confirmation. It does not store Discord passwords. Bot and TikTok credentials are not written into Discord messages.</p>
+    <h2>Protection of credentials</h2>
+    <p>TikTok client credentials, the Discord bot token, and OAuth tokens are encrypted before they are written to disk. On Windows the encryption key is protected with the operating system’s Data Protection API when that protection is available. The control panel shows only that a secret is configured. Secrets are not written to the application log.</p>
+    <h2>Retention and deletion</h2>
+    <p>Information remains in the local database until the operator deletes the account, removes a video record, restores or replaces the database, or deletes the application data folder. Disconnecting an account revokes and clears its stored TikTok tokens. The operator can also create and restore local database backups from the control panel.</p>
+    <h2>Your rights</h2>
+    <p>Because the data stays on the operator’s computer, the operator can view, export through a database backup, correct, and delete it locally. To ask about this policy, contact [COMPLETE THIS: contact email].</p>
+  </main>
+  <footer>TikTok Manager · Privacy Policy</footer>
+</body>
+</html>
